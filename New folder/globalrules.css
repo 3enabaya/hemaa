@@ -1,0 +1,39 @@
+
+/* start global rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{ scroll-behavior: smooth;}
+body{
+    font-family:"open sans" , "sans-serif";
+}
+ul{
+    list-style: none;
+}
+
+/*  our responsive content */
+/* container*/
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small screen */ 
+@media (min-width:768px){
+ .container{   width: 750px;}
+
+}
+/* meduim screen */ 
+@media (min-width:992px){
+    .container{width: 970px;}
+
+
+}
+/* big screen */ 
+@media (min-width:1200px){
+    .container{width: 1170px;}
+}
