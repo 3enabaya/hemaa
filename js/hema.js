@@ -1,4 +1,5 @@
 let a = document.getElementById('ar')
+let kolo = document.querySelector('.menu')
 let header = document.querySelector('.head1')
 let headerr = document.querySelector('.head2')
 let angle = document.querySelector('.fa-angle-down')
@@ -31,56 +32,21 @@ let outlet = document.querySelector('.outlet')
 let vrij = document.querySelector('.vrij')
 let feest = document.querySelector('.feest')
 
-    a.onmouseover= function(){
+   kolo.onmouseover= function(){
         header.style.backgroundColor='var(--color2)'
-        header.style.animation='color 1s'
-        angle.style.animation='ani .3s '
+        header.style.animation='color'
+        angle.style.animation='ani .5s '
         angle.style.transform='rotate( 180deg)'
-        table.style.animation='h .5s'
-        table.style.height='100vh'
-              table.style.display='block'
-a.style.border='2px solid green'
+
+
       }
-      a.onmouseup= function(){
-        header.style.backgroundColor='var(--color2)'
-        header.style.animation='color 1s'
-        angle.style.animation='ani .3s '
-        angle.style.transform='rotate( 180deg)'
-        table.style.animation='h .5s'
-        table.style.height='100vh'
-              table.style.display='block'
-a.style.border='2px solid green'
-      }
-      a.onmouseout= function(){
+
+    kolo.onmouseout= function(){
         header.style.backgroundColor='white'
-        angle.style.animation='aniback .3s  ease'
-        angle.style.transform='rotate( 360deg)'
-        table.style.animation='lee .5s'
-        table.style.height='.1px'
+        header.style.animation='color '
+        angle.style.animation='aniback .5s '
+        angle.style.transform='rotate( 180deg)'
       }
-      
-      table.onmouseover= function(){
-        table.style.height='100vh'
-      
-      }
-      
-      ul.onmouseover= function(){
-        table.style.display='block'
-        table.style.height='100vh'
-      
-      }
-      ul.onmouseleave= function(){
-            table.style.animation='l .5s'
-      table.style.height='1px'
-        table.style.display='none'
-      }
-
-
-
-
-
-
-
 
 
 
@@ -95,6 +61,8 @@ document.body.onscroll= function(){
 
   }
 }
+
+
 
 baby.onmouseover= function(){
 second.style.display ='block'
@@ -334,4 +302,72 @@ sahm1.onclick= function(){
 
 } 
 
+
+let sahm2= document.querySelector('.sahm2')
+let sahm3= document.querySelector('.sahm3')
+let sahm4= document.querySelector('.sahm4')
+let cards= document.querySelector('.cards')
+let sahm5= document.querySelector('.sahm5')
+let plants = document.querySelector('.plants')
+let cream = document.querySelector('.cream')
+let decore = document.querySelector('.decore')
+
+//  awl mara
+sahm2.onclick= function(){
+  console.log(sahm3)
+  cards.style.animation='sliderone .5s '
+  cards.style.marginLeft='-100%'
+  cards.style.paddingRight='90%'
+  sahm2.style.right='2%'
+  sahm3.style.right='1%'
+  sahm3.style.backgroundColor='white';
+  sahm3.style.display='block'
+  sahm3.style.color='black';
+  sahm4.style.display='block'
+  sahm4.style.left='50%'
+  sahm2.style.display='none'
+  decore.parentElement.classList.add('hide');
+  cream.parentElement.classList.add('hide')
+  plants.parentElement.classList.remove('hide');
+
+}
+
+
+sahm3.onclick= function(){
+  decore.parentElement.classList.remove('hide');
+  cream.parentElement.classList.remove('hide')
+  cards.style.marginLeft='-200%'
+  cards.style.animation='slidertwo .5s '
+  sahm5.style.display='block'
+  sahm5.style.left='66%'
+  sahm3.style.display='block';
+  sahm3.style.backgroundColor='black';
+  sahm3.style.color='white';
+  sahm3.style.right='8%'
+  
+
+} 
+
+
+sahm4.onclick= function(){
+  cards.style.marginLeft='5%'
+  cards.style.animation='sliderback .5s '
+  sahm2.style.display='block';
+  sahm3.style.display='none';
+  sahm4.style.display='none';
+  sahm5.style.display='none';
+  cards.style.marginLeft='-1%'
+  cards.style.paddingRight='90%'
+} 
+
+
+
+sahm5.onclick= function(){
+  cards.style.marginLeft='-100%'
+  cards.style.animation='sliderbacktwo .5s '
+  sahm2.style.display='block';
+  sahm3.style.display='none';
+  sahm3.style.backgroundColor='white';
+  sahm5.style.display='none';
+} 
 
